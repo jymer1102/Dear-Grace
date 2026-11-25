@@ -64,6 +64,12 @@
     text-align: center; padding: 3rem 1.25rem 5rem;
     background: radial-gradient(ellipse at 50% 35%, rgba(93, 123, 173, .28), transparent 65%);
   }
+  
+  /* Added Date Banner Styles */
+  .hero-dates { margin-bottom: 2.5rem; text-align: center; position: relative; z-index: 2; }
+  .hero-dates .date-main { font-family: "Caveat", cursive; font-size: clamp(1.8rem, 6vw, 2.4rem); color: #c9d8f0; display: block; }
+  .hero-dates .date-sub { font-style: italic; color: var(--dusty); font-size: clamp(1rem, 4.5vw, 1.2rem); letter-spacing: .05em; display: block; margin-top: 0.2rem; }
+
   .hero-roses { display: flex; align-items: flex-end; justify-content: center; gap: clamp(.5rem, 4vw, 3rem); width: 100%; max-width: 900px; }
   .hero-roses .rose-big { width: clamp(70px, 14vw, 140px); filter: drop-shadow(0 0 18px var(--rose-glow)); animation: sway 6s ease-in-out infinite alternate; }
   .hero-roses .rose-big:last-child { animation-delay: -3s; }
@@ -195,6 +201,11 @@
   <svg class="deco" style="width:56px;height:73px;top:12%;right:4%;--r:12deg" viewBox="0 0 100 130"><use href="#rose"/></svg>
   <svg class="deco" style="width:50px;height:65px;bottom:16%;left:5%;--r:8deg" viewBox="0 0 100 130"><use href="#rose"/></svg>
   <svg class="deco" style="width:64px;height:83px;bottom:12%;right:5%;--r:-10deg" viewBox="0 0 100 130"><use href="#rose"/></svg>
+
+  <div class="hero-dates reveal">
+    <span class="date-main">October 13, 2026</span>
+    <span class="date-sub">Celebrating our one month, counting down to November 13</span>
+  </div>
 
   <div class="hero-roses">
     <svg class="rose-big" viewBox="0 0 100 130" aria-hidden="true"><use href="#rose"/></svg>
